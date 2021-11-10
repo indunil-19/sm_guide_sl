@@ -41,7 +41,7 @@ export default function Viewuserlist() {
     
         
     useEffect(()=>{
-        fetch("/admin/viewUsers")
+        fetch("/api/admin/viewUsers")
         .then(res=>res.json())
         .then(result=>{
             

@@ -43,7 +43,7 @@ const SignIn  = ()=>{
               })
             return
         }
-        fetch("/admin/signin",{
+        fetch("/api/admin/signin",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

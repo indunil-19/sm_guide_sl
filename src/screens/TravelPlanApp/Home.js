@@ -10,10 +10,12 @@ import { PlanCardHome } from "../../components/TravelPlanApp/planCardhome"
 export const Home=()=>{
     const [plans,setPlans]=useState([])
     useEffect(()=>{
-            fetch("/user/getPublicTravelPlans").then(res=>res.json())
+            fetch("/api/user/getPublicTravelPlans").then(res=>res.json())
             .then(result=>{
                 console.log(result)
                 setPlans(result.myPlans)
+            }).catch(e=>{
+                console.log(e)
             })
     },[])
     
@@ -22,8 +24,8 @@ export const Home=()=>{
         <>
         <Flex flexDirection="column"  alignItems="center" minHeight="100vh" backgroundRepeat="no-repeat" backgroundSize="cover" backgroundPosition="center"  backgroundImage="url('https://images.unsplash.com/photo-1583648542585-d5f9b9c989a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')">
             <Text fontSize="4xl" p={1}>The new way to plan your next trip</Text>
-
-            {/* <Text fontSize="xl">Get a personalized trip --->
+{/* 
+            <Text fontSize="xl">Get a personalized trip --->
             A complete day by day itinerary
             based on your preferences</Text>
 

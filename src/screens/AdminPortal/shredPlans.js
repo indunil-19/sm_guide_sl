@@ -35,7 +35,7 @@ export const SharedPlan=()=>{
 
 
     const getSharedPlans=()=>{
-        fetch('/admin/getsharedPlans',{
+        fetch('/api/admin/getsharedPlans',{
             method:"post",
             headers:{
                 "Content-type":"application/json"
@@ -72,7 +72,7 @@ export const SharedPlan=()=>{
     }
 
     const deletePlan=()=>{
-        fetch('/admin/deleteTravelPlan',{
+        fetch('/api/admin/deleteTravelPlan',{
             method:"delete",
             headers:{
                 "Content-Type":"application/json",
@@ -97,7 +97,7 @@ export const SharedPlan=()=>{
         
     }
     const publicPlan=()=>{
-        fetch('/admin/setPublicPlan',{
+        fetch('/api/admin/setPublicPlan',{
             method:"post",
             headers:{
                 "Content-Type":"application/json",

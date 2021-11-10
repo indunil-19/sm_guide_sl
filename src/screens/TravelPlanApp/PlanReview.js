@@ -19,7 +19,7 @@ export const PlanReview=()=>{
     const toast=useToast()
 
     useEffect(() => {
-        fetch('/user/getReview',{
+        fetch('/api/user/getReview',{
             method:"post",
             headers:{
                 "Content-Type":"application/json",
@@ -45,7 +45,7 @@ export const PlanReview=()=>{
     }, [])
 
     const submitReview=()=>{
-        fetch('/user/addReview',{
+        fetch('/api/user/addReview',{
             method:"post",
             headers:{
                 "Content-Type":"application/json",
@@ -70,7 +70,7 @@ export const PlanReview=()=>{
         
      }
      const sharePlan=()=>{
-        fetch('/user/sharePlan',{
+        fetch('/api/user/sharePlan',{
             method:"post",
             headers:{
                 "Content-Type":"application/json",

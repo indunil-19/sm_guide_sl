@@ -19,7 +19,7 @@ const AdminList=()=>{
     
    const [data,setData]=useState([])
    useEffect(()=>{
-    fetch("/admin/viewAdmins")
+    fetch("/api/admin/viewAdmins")
     .then(res=>res.json())
     .then(result=>{
         console.log(result)

@@ -57,7 +57,7 @@ const SignUp  = ()=>{
               })
             return
         }
-        fetch("/admin/signup",{
+        fetch("/api/admin/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

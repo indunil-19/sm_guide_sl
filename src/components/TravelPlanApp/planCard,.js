@@ -19,7 +19,7 @@ export const PlanCard=({_id="",name,days,createdDate, travelPlan,startLocation,s
     const toast=useToast()
 
     const changeName=()=>{
-        fetch("/user/changePlanName",{
+        fetch("/api/user/changePlanName",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

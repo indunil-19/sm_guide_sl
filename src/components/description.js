@@ -21,7 +21,7 @@ export const Description=({des, pid})=>{
     const updateDescription=()=>{
         setLoading(true)
   
-        fetch("/admin/descriptionUpdate",{
+        fetch("/api/admin/descriptionUpdate",{
           method:"post",
           headers:{
               "Content-Type":"application/json",

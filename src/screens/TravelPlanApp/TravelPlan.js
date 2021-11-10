@@ -58,7 +58,7 @@ export const TravelPlan=()=>{
 
 
     const savePlan=()=>{
-        fetch('/user/saveTravelPlan',{
+        fetch('/api/user/saveTravelPlan',{
             method:"post",
             headers:{
                 "Content-Type":"application/json",
@@ -95,7 +95,7 @@ export const TravelPlan=()=>{
     }
 
     const updatePlan=()=>{
-        fetch('/user/updateTravelPlan',{
+        fetch('/api/user/updateTravelPlan',{
             method:"post",
             headers:{
                 "Content-Type":"application/json",

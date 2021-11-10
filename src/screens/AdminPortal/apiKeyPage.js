@@ -16,7 +16,7 @@ const ApiKeyDetailsPage=()=>{
 
 
     useEffect(()=>{
-        fetch("/admin/getApiKet").then(res=>res.json()).then(data=>{
+        fetch("/api/admin/getApiKet").then(res=>res.json()).then(data=>{
             console.log(data)
             setApiKey(data.result.apiKey)
             setDate(data.result.updateDate)
@@ -32,7 +32,7 @@ const ApiKeyDetailsPage=()=>{
 
 
     const updateApiKey=()=>{
-        fetch("/admin/updateApiKey", {
+        fetch("/api/admin/updateApiKey", {
             method:"post",
             headers:{
                 "Content-Type":"application/json"

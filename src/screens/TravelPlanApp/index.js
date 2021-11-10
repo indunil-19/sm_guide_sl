@@ -80,7 +80,7 @@ const TravelPlanApp=()=>{
             <Route path="/travelPlan/contact">
                 <Contact/>
             </Route>
-            <Route path="/travelPlan/signin">
+            <Route path="/travelPlan/signin" >
                 <SignIn/>
             </Route>
             <Route path="/travelPlan/signUp">

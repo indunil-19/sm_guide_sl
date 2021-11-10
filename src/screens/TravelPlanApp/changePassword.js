@@ -12,7 +12,7 @@ export const ChangePassword=()=>{
 
     const updatepassword=()=>{
 
-        fetch("/user/updatepassword",{
+        fetch("/api/user/updatepassword",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

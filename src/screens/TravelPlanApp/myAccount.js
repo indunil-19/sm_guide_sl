@@ -57,7 +57,7 @@ export const MyAccount=()=>{
 
     const updateData=()=>{
         setLoading(true)
-        fetch(`/user/updateUser`,{
+        fetch(`/api/user/updateUser`,{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

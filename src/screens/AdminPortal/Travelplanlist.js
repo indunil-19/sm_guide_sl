@@ -13,7 +13,7 @@ export default function Travelplanlist() {
     const history=useHistory()
 
    useEffect(()=>{
-    fetch("/admin/viewTravelplan")
+    fetch("/api/admin/viewTravelplan")
     .then(res=>res.json())
     .then(result=>{
         console.log(result)

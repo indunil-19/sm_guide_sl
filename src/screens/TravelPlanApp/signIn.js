@@ -40,7 +40,7 @@ export const SignIn=()=>{
               })
             return
         }
-            fetch("/signin",{
+            fetch("/api/signin",{
                 method:"post",
                 headers:{
                     "Content-Type":"application/json"
@@ -76,7 +76,7 @@ export const SignIn=()=>{
                     history.push('/travelPlan')
                 }
             }).catch(err=>{
-                console.log(err)
+                console.log("dfdfgghgh")
             })
 
     }

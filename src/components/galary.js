@@ -45,7 +45,7 @@ export  const Galary=({pid,imarr,...props})=>{
     
     }
     const deleteImage=(image)=>{
-      fetch("/admin/deleteProvinceImage",{
+      fetch("/api/admin/deleteProvinceImage",{
         method:"post",
         headers:{
             "Content-Type":"application/json",
@@ -79,7 +79,7 @@ export  const Galary=({pid,imarr,...props})=>{
   
     useEffect(()=>{
       if(url){
-       fetch("/admin/addImgtoProvinceData",{
+       fetch("/api/admin/addImgtoProvinceData",{
            method:"post",
            headers:{
                "Content-Type":"application/json",

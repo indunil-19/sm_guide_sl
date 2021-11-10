@@ -1,5 +1,5 @@
 {
-  "name": "sm_guide_sl",
+  "name": "adminportal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +16,7 @@
     "bootstrap": "^5.1.1",
     "framer-motion": "^4.1.17",
     "google-maps-react": "^2.0.6",
+    "http-proxy-middleware": "^2.0.1",
     "materialize-css": "^1.0.0",
     "npm-install-all": "^1.1.21",
     "photoswipe": "^4.1.3",

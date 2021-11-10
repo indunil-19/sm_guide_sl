@@ -17,7 +17,7 @@ export const PublicPlans=()=>{
 
 
     const getPublicPlans=()=>{
-        fetch('/admin/getPublicPlans',{
+        fetch('/api/admin/getPublicPlans',{
             method:"get"
         }).then(res=>res.json()).
         then(data=>{
@@ -34,7 +34,7 @@ export const PublicPlans=()=>{
     }
 
     const removePublic=(pid)=>{
-        fetch('/admin/removePublic',{
+        fetch('/api/admin/removePublic',{
             method:"post",
             headers:{
                 "Content-Type":"application/json",

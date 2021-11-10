@@ -45,7 +45,7 @@ const LinkItems = [
 const logout=()=>{
     
     console.log("sdsw")
-    fetch("/logout")
+    fetch("/api/logout")
 }
 
 const NavBar=({

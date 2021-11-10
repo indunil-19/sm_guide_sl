@@ -19,7 +19,7 @@ export const MyPlans=()=>{
 
     useEffect(()=>{
 
-        fetch('/user/getTravelPlans').then(res=>res.json())
+        fetch('/api/user/getTravelPlans').then(res=>res.json())
         .then(data=>{
             console.log(data)
             setPlans(data.myPlans)
@@ -33,7 +33,7 @@ export const MyPlans=()=>{
             setPID(planId)
      }
      const deletePlan=()=>{
-        fetch('/user/deleteTravelPlan',{
+        fetch('/api/user/deleteTravelPlan',{
             method:"delete",
             headers:{
                 "Content-Type":"application/json",

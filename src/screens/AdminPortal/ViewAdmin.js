@@ -14,7 +14,7 @@ export default function ViewAdmin() {
     const[Dob,setdob]=useState("fdfgddgdg")
     const[Email,setemail]=useState("afdsgdgghfu")
     useEffect(()=>{
-      fetch("/admin/viewAdmins")
+      fetch("/api/admin/viewAdmins")
       .then(res=>res.json())
       .then(result=>{
           console.log(result)

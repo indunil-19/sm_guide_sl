@@ -5,7 +5,7 @@ export default function Travelplanlist() {
     const [data,setData]=useState([])
 
    useEffect(()=>{
-    fetch("/admin/viewTravelplan")
+    fetch("/api/admin/viewTravelplan")
     .then(res=>res.json())
     .then(result=>{
         console.log(result)

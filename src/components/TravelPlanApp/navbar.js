@@ -11,7 +11,7 @@ const NavBar=()=>{
      const history = useHistory()
 
      const logout=()=>{
-         fetch("/logout").then(res=>res.json()).
+         fetch("/api/logout").then(res=>res.json()).
          then(result=>console.log(result)).
          catch(e=>{
              console.log(e)

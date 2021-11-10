@@ -16,7 +16,7 @@ export default function ViewUser() {
     const[Religion,setReligion]=useState("")
     const[Picture,setPicture]=useState("")
     useEffect(()=>{
-        fetch("/admin/viewUsers")
+        fetch("/api/admin/viewUsers")
         .then(res=>res.json())
         .then(result=>{
             
